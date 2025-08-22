@@ -1,0 +1,33 @@
+{
+	"name": "ssha3",
+	"version": "1.0.0",
+	"description": "A subpar implementation of SHA3 and Keccak hashing",
+	"author": "Codezilluh",
+	"license": "GPL-3.0-or-later",
+	"main": "index.js",
+	"scripts": {
+		"test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+		"build": "parcel build",
+		"prebuild": "rimraf lib .parcel-cache"
+	},
+	"type": "module",
+	"source": "src/index.ts",
+	"module": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"targets": {
+		"module": {
+			"distDir": "lib",
+			"sourceMap": false,
+			"optimize": true
+		}
+	},
+	"devDependencies": {
+		"@parcel/packager-ts": "^2.15.4",
+		"@parcel/transformer-typescript-types": "^2.15.4",
+		"@types/node": "^24.3.0",
+		"jest": "^30.0.5",
+		"parcel": "^2.15.4",
+		"rimraf": "^6.0.1",
+		"typescript": "^5.9.2"
+	}
+}
