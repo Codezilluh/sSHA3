@@ -6,9 +6,19 @@ A TypeScript implementation of Keccak permutation and SHA3 algorithm as describe
 
 ## Performance
 
-I'll run some benchmarks at some point, but I expect that my implementation will be much slower than what is already out there (as speed wasn't my focus).
+Check out the benchmark code (it's very simple) in the [benchmarks folder](https://github.com/Codezilluh/sSHA3/tree/main/benchmarks) of this repository. Performance isn't _too_ bad, we get about 32 operations per second and the alternatives are only getting around 20-90k.
+
+
+| Task name             | Throughput avg (ops/s) | Samples |
+| --------------------- | ---------------------- | ------- |
+| * sSHA3: Keccak-512     | 32 ± 0.47%             | 64      |
+| SHA3: Keccak-512      | 20437 ± 0.56%          | 1974    |
+| js-sha3: Keccak-512   | 90184 ± 0.09%          | 8961    |
+
 
 ## Installation
+
+It isn't published on NPM and I don't recommend you actually use it, but install it with this command.
 
 ```shell
 npm i github:Codezilluh/ssha3

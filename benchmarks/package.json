@@ -1,0 +1,12 @@
+{
+	"scripts": {
+		"bench": "node bench.js"
+	},
+	"type": "module",
+	"dependencies": {
+		"js-sha3": "^0.9.3",
+		"sha3": "^2.1.4",
+		"ssha3": "github:Codezilluh/ssha3",
+		"tinybench": "^5.0.0"
+	}
+}
